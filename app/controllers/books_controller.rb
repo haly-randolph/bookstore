@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
 
-
+    # call set_book only one for the methos show, edit, update, destroy
     before_action :set_book, only: [ :show, :edit, :update, :destroy ]
   
 
