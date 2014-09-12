@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
 
     # call set_book only one for the methos show, edit, update, destroy
+    # so comment out @book = Book.find(params[:id]) in these 
+    # method
     before_action :set_book, only: [ :show, :edit, :update, :destroy ]
   
 
