@@ -5,4 +5,5 @@ Bookstore::Application.routes.draw do
   post "/books" => "books#create"
   get "/books/:id/edit" => "books#edit", as: 'edit_book'
   patch "/books/:id" => "books#update"
+  delete "/books/:id" => "books#destroy"
 end
