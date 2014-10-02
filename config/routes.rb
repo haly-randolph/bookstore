@@ -1,4 +1,6 @@
 Bookstore::Application.routes.draw do
+  resources :reviews
+
   #get "/books" => "books#index", as: 'books'
   #get "/books/new" => "books#new", as: 'new_book'
   #get "/books/:id" => "books#show", as: 'book'
