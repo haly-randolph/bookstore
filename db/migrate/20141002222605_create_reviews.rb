@@ -4,7 +4,7 @@ class CreateReviews < ActiveRecord::Migration
       t.string :name
       t.integer :stars
       t.text :comment
-      t.references : book, index: true
+      t.references :book, index: true
 
       t.timestamps
     end
