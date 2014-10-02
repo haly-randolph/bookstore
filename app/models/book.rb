@@ -12,4 +12,10 @@ validates :price,
     if: "price.present?"
 
 has_many :reviews
+
+
+def average_stars
+  reviews.average(:stars)
+end
+
 end
